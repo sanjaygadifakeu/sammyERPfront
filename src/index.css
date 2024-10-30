@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adjusted Black & White Theme */
+.InnerSidebar {
+  @apply w-[84%] h-screen bg-black m-[0.2px] border-2 border-white;
+}
+.ProfileDiv {
+  @apply bg-white text-black font-bold w-[90%] flex justify-center mx-auto h-28 border-b-2 border-black;
+}
+.SidebarNavlink {
+  @apply bg-white text-black font-bold hover:bg-gray-400 hover:duration-200 w-full flex mx-auto py-3;
+}
+.Active {
+  @apply text-black font-bold bg-gray-400 w-full flex mx-auto py-3 items-center;
+}
+
+/* Telegram Blue Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0088cc;
+  border-radius: 8px;
+}
+.no-scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #0088cc #f1f1f1;
+}
